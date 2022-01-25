@@ -11,40 +11,47 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital@1&family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="app">
-      <header class="header">
-        <nav>
-          <a href="index.html" id="webstudio">Web<span id="studio">Studio</span></a>
-          <ul>
-            <li><a href="" id="agencja-index">Agencja</a></li>
-            <li>
-              <a href="portfolio.html" id="portfolio-index">Portfolio</a>
-            </li>
-            <li><a href="" id="kontakty-index">Kontakt</a></li>
-          </ul>
-          <a href="mailto:info@devstudio.com" id="mail">info@devstudio.com</a>
-          <a href="tel:+48111111111" id="tel">+48 111 111 111</a>
-        </nav>
-      </header>
-      <main class="main-portfolio">
-        <div class="srodek">
-        <ul>
-          <li><button type="button" class="wszystkie"><p id="wszystkie">Wszystkie</p></button></li>
-          <li><button type="button" class="strony"><p id="strony">Strony</p></button></li>
-          <li><button type="button" class="aplikacje"><p id="aplikacje">Aplikacje</p></button></li>
-          <li><button type="button" class="dizajn"><p id="dizajn">Dizajn</p></button></li>
-          <li><button type="button" class="marketing"><p id="marketing">Marketing</p></button></li>
+    <header class="header">
+      <ul class="container-nav">
+        <li>
+          <a href="index.html" id="webstudio-nav"
+            >Web<span id="studio-nav">Studio</span></a
+          >
+        </li>
+        <li><a href="" id="agencja-nav">Agencja</a></li>
+        <li><a href="portfolio.html" id="portfolio-nav">Portfolio</a></li>
+        <li><a href="" id="kontakt-nav">Kontakt</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" id="mail-nav"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a href="tel:+48111111111" id="tel-nav">+48 111 111 111</a></li>
+      </ul>
+    </header>
+    <main>
+        <section class="container-portfolio">
+       
+        <ul class="container-button-portfolio">
+          <li><button type="button" class="button-portfolio"><p id="b">Wszystkie</p></button></li>
+          <li><button type="button" class="button-portfolio"><p id="b">Strony</p></button></li>
+          <li><button type="button" class="button-portfolio"><p id="b">Aplikacje</p></button></li>
+          <li><button type="button" class="button-portfolio"><p id="b">Dizajn</p></button></li>
+          <li><button type="button" class="button-portfolio"><p id="b">Marketing</p></button></li>
         </ul>
-     </div>
+    
 
-      <div>
-        <ul>
+     
+        <ul class="container-list-portfolio">
           <li>
-            <figure class="laptop">
+            <figure class="image-portfolio">
               <img
                 src="images/laptop.jpg"
                 alt="laptop"
@@ -58,7 +65,7 @@
             </figure>
           </li>
           <li>
-            <figure class="nba">
+            <figure class="image-portfolio">
               <img src="images/nba.jpg" alt="nba" width="370" height="294" />
               <figcaption>
                 <p id="fcaption">Grafika New Orlean vs Golden Star</p>
@@ -67,7 +74,7 @@
             </figure>
           </li>
           <li>
-            <figure class="seafood">
+            <figure class="image-portfolio">
               <img
                 src="images/seafood.jpg"
                 alt="seafood"
@@ -80,10 +87,10 @@
               </figcaption>
             </figure>
           </li>
-          </ul>
-          <ul>
+         
+         
           <li>
-            <figure class="headphones">
+            <figure class="image-portfolio">
               <img
                 src="images/headphones.jpg"
                 alt="headphones"
@@ -96,7 +103,7 @@
             </figure>
           </li>
           <li>
-            <figure class="box">
+            <figure class="image-portfolio">
               <img
                 src="images/box.jpg"
                 alt="box"
@@ -109,7 +116,7 @@
             </figure>
           </li>
           <li>
-            <figure class="monitor">
+            <figure class="image-portfolio">
               <img
                 src="images/monitor.jpg"
                 alt="monitor"
@@ -121,10 +128,10 @@
                 <p id="funder">Strona internetowa</p>
             </figure>
           </li>
-          </ul>
-          <ul>
+         
+        
           <li>
-            <figure class="book">
+            <figure class="image-portfolio">
               <img
                 src="images/book.jpg"
                 alt="book"
@@ -137,7 +144,7 @@
             </figure>
           </li>
           <li>
-            <figure class="letters">
+            <figure class="image-portfolio">
               <img
                 src="images/letters.jpg"
                 alt="letters"
@@ -150,7 +157,7 @@
             </figure>
           </li>
           <li>
-            <figure class="mac">
+            <figure class="image-portfolio">
               <img
                 src="images/mac.jpg"
                 alt="mac"
@@ -163,16 +170,17 @@
             </figure>
           </li>
         </ul>
-      </div>
-      </main>
-      <footer class="footer">
-        <p class="web-footer">Web<span id="footer-studio">Studio</span></p>
-        <address>
-          <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <p class="footer-mail">info@example.com</p>
-          <p class="footer-tel">+48 111 111 111</p>
-        </address>
-      </footer>
-    </div>
+   </section>
+    </main>
+    <footer class="footer">
+      <ul class="container-footer">
+        <li class="webstudio-footer">
+          Web<span id="studio-footer">Studio</span>
+        </li>
+        <li class="street-footer">m. Warszawa, Aleje Jerozolimskie 21</li>
+        <li class="mail-tel-footer">info@example.com</li>
+        <li class="mail-tel-footer">+48 111 111 111</li>
+      </ul>
+    </footer>
   </body>
 </html>
