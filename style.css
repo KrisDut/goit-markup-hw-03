@@ -2,14 +2,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: white;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 ul {
   list-style-type: none;
-}
-
-* {
-  margin: 0 auto;
 }
 
 .header {
@@ -25,7 +23,7 @@ ul {
   align-items: center;
 }
 
-.container-nav {
+.nav {
   display: flex;
   width: 1200px;
   align-items: center;
@@ -125,7 +123,7 @@ ul {
   color: #2196f3;
 }
 
-.container-section-1-index {
+.section-1-index {
   width: 1600px;
   height: 600px;
   left: 0px;
@@ -172,31 +170,28 @@ ul {
   color: #ffffff;
 }
 
-.container-section-2-index {
+.section-2-index {
   width: 1600px;
-  height: 195px;
+
   background-color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
-  padding: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.container-lorem {
+.lorem {
   width: 1200px;
-  height: 101px;
   display: flex;
   justify-content: space-between;
-  padding: 0;
 }
 
 .lorem-index {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 114%;
   letter-spacing: 0.03em;
+
   color: #212121;
 }
 
@@ -226,25 +221,22 @@ ul {
   color: #212121;
 }
 
-.container-img-index {
+.img-index {
   width: 1200px;
   display: flex;
-  padding: 0px;
+
   justify-content: space-between;
-  margin-top: 50px;
 }
 
-.container-section-4-index {
+.section-4-index {
   width: 1600px;
   height: 648px;
   margin-top: 94px;
   background: #f5f4fa;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
 }
 
-.h2-section-4-index {
+#h2-section-4-index {
+  padding-top: 94px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -256,20 +248,18 @@ ul {
   color: #212121;
 }
 
-.container-section-4-list {
-  width: 1200px;
+.section-4-list {
+  width: 1600px;
   display: flex;
-  align-items: flex-end;
-  margin-top: 50px;
-  padding: 0;
+  justify-content: space-between;
 }
 
 .image-index {
   width: 270px;
   height: 368px;
-  left: 1115px;
-  top: 1635px;
-
+  margin: 0;
+  padding: 0;
+  border: 0;
   background: #ffffff;
   /* material shadow v1 */
 
@@ -311,14 +301,21 @@ ul {
   width: 1600px;
   height: 252px;
   background: #2f303a;
-  display: flex;
-
-  align-items: center;
 }
 
-.container-footer {
+.container {
+  margin: 0 auto;
   width: 1200px;
-  height: 132px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-items {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .webstudio-footer {
@@ -364,18 +361,10 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.container-portfolio {
-  width: 1600px;
-  display: grid;
-  justify-content: center;
-}
-
-.container-button-portfolio {
-  width: 600px;
-  height: 38px;
-  padding: 0px;
-  margin-top: 94px;
+.button-items {
   display: flex;
+  justify-content: center;
+  padding-top: 94px;
 }
 
 .button-portfolio {
@@ -384,6 +373,8 @@ ul {
   cursor: pointer;
   background: #f5f4fa;
   border-radius: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .button-portfolio:hover {
@@ -395,7 +386,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 40%;
   /* identical to box height, or 162% */
 
   text-align: center;
@@ -404,14 +395,17 @@ ul {
   color: #212121;
 }
 
-.container-list-portfolio {
-  width: 1200px;
-  height: 1322px;
+.list-portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 94px;
+}
+
+figure {
+  margin: 0;
+  margin-top: 30px;
 }
 
 .image-portfolio {
